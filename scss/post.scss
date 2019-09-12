@@ -1,0 +1,35 @@
+// Sub themes of Snap have their own post.scss file so that we can place sub theme overrides after the main snap files.
+// Note, where ever we override a snap .scss file and we also want the snap one to be included, we must use
+// a relative path to the snap .scss. Also the Snap .scss file has to go before the sub theme one.
+// If the sub theme does not have a corresponding .scss file then the snap one is loaded automatically WITHOUT having to specify
+// a relative path to it. NOTE: This is very important, only use relative paths for snap .scss when the sub theme has
+// a corresponding .scss file.
+
+@import "../../snap/scss/mixins";
+@import "../../snap/scss/joule";
+@import "../../snap/scss/compatibility";
+@import "../../snap/scss/yui";
+@import "../../snap/scss/blocks";
+@import "../../boost/scss/moodle/core";
+@import "../../snap/scss/core";
+@import "../../snap/scss/course";
+@import "course";
+@import "../../snap/scss/coursefooter";
+@import "../../snap/scss/courselistings";
+@import "../../snap/scss/toc";
+@import "../../snap/scss/personalmenu";
+@import "../../snap/scss/forms";
+@import "../../snap/scss/filemanager";
+@import "../../snap/scss/plugins";
+@import "../../snap/scss/userprofile";
+@import "../../snap/scss/message";
+@import "../../snap/scss/coursemanagement";
+@import "../../snap/scss/themesettings";
+@import "../../snap/scss/brandcolor";
+@import "../../snap/scss/typefaces";
+@import "../../snap/scss/behat";
+@import "../../snap/scss/custom";
+@import "../../snap/scss/print";
+
+// Import FontAwesome.
+@import "../../boost/scss/fontawesome";
